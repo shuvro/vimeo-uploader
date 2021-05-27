@@ -1,0 +1,12 @@
+{
+    "name": "shuvro/vimeo-uploader",
+    "description": "Upload videos to your Vimeo account and update their metadata directly from a browser or a Node.js app.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "shuvro",
+            "email": "shuvro.dhrubo@gmail.com"
+        }
+    ],
+    "require": {}
+}
