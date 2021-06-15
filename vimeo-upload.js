@@ -161,7 +161,11 @@
         this.videoData = {
             name: (opts.name > '') ? opts.name : defaults.name,
             description: (opts.description > '') ? opts.description : defaults.description,
-            'privacy.view': opts.private ? 'nobody' : 'anybody'
+            /*
+           * REF: https://developer.vimeo.com/api/reference/videos#edit_video  search for privacy.view
+           * Available privacy.view =>  ['anybody', 'contacts', 'disable', 'nobody', 'password', 'unlisted', 'users']
+           */
+            'privacy.view': opts.private ? opts.private : 'anybody'
         }
 
         if (!(this.url = opts.url)) {
